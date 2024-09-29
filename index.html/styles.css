@@ -62,6 +62,9 @@ p, a, button {
     border-radius: 5px;
     text-decoration: none;
     margin: 10px;
+    display: inline-block;  /* Asegura que los botones se comporten correctamente */
+    width: auto; /* Evita que se fijen a un ancho específico */
+    max-width: 100%; /* Asegura que no se desborden en pantallas pequeñas */
 }
 
 .btn-primary {
@@ -163,57 +166,70 @@ p, a, button {
 
 input, textarea {
     width: 100%;
-    padding: 15px;
-    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-textarea {
-    height: 150px;
 }
 
 button {
-    padding: 15px 30px;
-    background-color: #ff7b54;
+    padding: 10px 30px;
     border: none;
+    background-color: #ff7b54;
     color: white;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #2b9348;
+    border-radius: 5px;
 }
 
 /* Footer */
 .footer-section {
-    background-color: #2b9348;
-    color: white;
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    .btn-primary, .btn-secondary {
+        display: block;  /* Los apila uno debajo del otro */
+        margin: 10px auto;  /* Centra los botones */
+        width: 80%; /* Ajusta el ancho para que se vea mejor en pantallas pequeñas */
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 0.9rem;  /* Reduce el tamaño de la fuente */
+    }
 }
 
 /* Animaciones */
 @keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-50px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(50px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes sway {
-    0%, 100% { transform: rotate(0); }
-    50% { transform: rotate(3deg); }
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .title {
-        font-size: 2.5rem;
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
     }
 }
