@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Muebles</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../T.muebles actualizado/app.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-sitio">Tienda <span> Muebles</span> </h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">inicio</a>
+            <a href="nosotros.html">nosotros</a>
+                <a href="tienda.html">tienda</a>
+                <a href="blog.html">blog</a>
+                <a href="galeria.html">galeria</a>
+                <a href="contacto.html">contacto</a>
+        </nav>
+    </div>
+   
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contacto</h2>
+        <form>
+            <fieldset>
+                <legend class="leyenda">Tus Datos</legend>
+                <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text"  placeholder="Puchaina" required>
+                
+            </div>
+            
+                <div class="campo">
+                <label for="name">Asunto:</label>
+                <input id="nombre" name="nombre" type="text"  placeholder="La puchaina..." required>
+            </div>
+                <div class="campo">
+                <label for="name">E-mail:</label>
+                <input id="nombre" name="nombre" type="email"  placeholder="queridoluis@focan.com" required>
+            </div>
+                <div class="campo">
+                <label for="name">Telefono:</label>
+                <input id="nombre" name="number" type="tel"  placeholder="Puchaina" required>
+            </div>
+                <div class="campo">
+                <label class="cuadro">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="10" cols="20" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="leyenda">País</legend>
+                <label for="pais">PAÍS</label>
+                <select id="pais" name="pais">
+                    <option value="">-- Seleccione --</option>
+                    <option value="es">España</option>
+                    <option value="mex">México</option>
+                    <option value="al">Alemania</option>
+                    <option value="arg">Argentina</option>
+                    <option value="argelia">Argelia</option>
+                    <!-- Añade más opciones según sea necesario -->
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend class="leyenda">Informacion Extra</legend>
+             
+        <div>
+            <label for="cliente">Cliente:</label>
+            <input type="radio" id="cliente" name="info-extra" value="cliente">
+           
+        </div>
+        <div>
+            <label for="proveedor">Proveedor:</label>
+            <input type="radio" id="proveedor" name="info-extra" value="proveedor">
+           
+        </div>
+        <div class="campo">
+            <label class="cuadro">Categoría de Interés:</label>
+            <textarea id="mensaje" name="mensaje" rows="10" cols="20" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+        
+            </fieldset>
+            
+        <button type="submit">ENVIAR FORMULARIO</button>
+        </form>
+        
+
+    </main>
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorias</h3>
+                <nav class="footer-menu">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardin</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra historia</a>
+                    <a href="#">Mision,Vision y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Termino de servicio</a>
+                </nav>
+            </div>
+            <div>
+                <div>
+                    <h3>Soporte</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Preguntas frecuentes</a>
+                        <a href="#">Ayuda en linea</a>
+                        <a href="#">Confianza y Seguridad</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">Todos los derechos Reservados,TiendaMuebles</p>
+
+        </div>
+    </footer>
